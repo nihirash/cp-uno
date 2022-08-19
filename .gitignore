@@ -1,0 +1,7 @@
+.tmp/
+cpm.bin
+cpm.sys
+*.com
+*.sna
+*.sld
+*.hex
