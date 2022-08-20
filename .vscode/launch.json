@@ -26,6 +26,29 @@
             "load": "test.sna",
             "smallValuesMaximum": 513,
             "tmpDir": ".tmp"
+        },
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Unit Tests",
+            "unitTests": true,
+            "presentation": {
+                "hidden": true
+            },
+            "remoteType": "zsim",
+            "zsim": {
+                "Z80N": false,
+                "visualMemory": true,
+                "memoryModel": "RAM"
+            },
+            "sjasmplus": [
+                {
+                    "path": "tests.sld"
+                }
+            ],
+            "startAutomatically": true,
+            "rootFolder": "${workspaceFolder}",
+            "load": "tests.sna"
         }
     ]
 }
